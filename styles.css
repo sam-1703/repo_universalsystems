@@ -148,4 +148,134 @@ font-size: 15px;
 	padding: 35px 0px
 	}
 	}
-	
+	/* Global */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	font-family: Arial, sans-serif;
+	background-image: linear-gradient(to bottom, #2196F3, #F7DC6F); /* Degradado azul y amarillo */
+	background-attachment: fixed;
+  }
+  
+  /* Header */
+  header {
+	background-color: rgba(255, 255, 255, 0.8); /* Blanco con opacidad */
+	color: #333;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+	float: left;
+  }
+  
+  nav {
+	float: right;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  
+  nav a {
+	color: #333;
+	text-decoration: none;
+  }
+  
+  nav a:hover {
+	color: #FFFF00; /* Amarillo */
+  }
+  
+  /* Formulario */
+  .form__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8); /* Blanco con opacidad */
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .general__information {
+	background-color: #F7DC6F; /* Amarillo claro */
+	padding: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .information {
+	text-align: center;
+  }
+  
+  .form__information {
+	background-color: #FFFFFF;
+	padding: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form {
+	padding: 20px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+	background-color: #2196F3; /* Azul */
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+	background-color: #1A76D2;
+  }
+  
+  /* Footer */
+  .footer {
+	background-color: #2196F3; /* Azul */
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	clear: both;
+  }
+  
+  /* Responsive */
+  @media only screen and (max-width: 768px) {
+	.form__container {
+	  flex-direction: column;
+	}
+	.general__information {
+	  margin-bottom: 20px;
+	}
+  }
+  
