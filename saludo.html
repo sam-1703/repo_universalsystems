@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="saludo.css">
+    <title>Bienvenida</title>
+</head>
+<body>
+    <!-- Este H1, lo puede poner en donde quiera, siempre y cuando tenga el mismo id -->
+    <h1 id="mensajeBienvenida"></h1> 
+
+    <script>
+        const nombreUsuario = localStorage.getItem("nombreUsuario"); //llama el nombre del localstorage y lo almacena en la constante
+
+        //Condicion, si hay valor en la constante ejecutar lo siguiente. 
+        if (nombreUsuario) {
+            document.getElementById("mensajeBienvenida").textContent = `Bienvenido ${nombreUsuario}`;
+        } else {
+            document.getElementById("mensajeBienvenida").textContent = "Bienvenido";
+        }
+    </script>
+</body>
+</html>
