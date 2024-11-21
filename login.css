@@ -1,0 +1,148 @@
+login.css
+
+/* Global */
+
+ {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-image: linear-gradient(to bottom, #2196F3, #F7DC6F); /* Degradado azul y amarillo */
+background-attachment: fixed;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 8rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,#2196F3, #F7DC6F); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header>* {
+    margin: 0 1rem 0 1rem;
+    font-size: 20px;
+}
+
+.logo img {
+   max-width: 5.5rem;
+}
+
+header>nav>ul {
+    padding: 0.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* Título */
+
+h1 {
+text-align: center;
+padding: 20px;
+color: #000000;
+}
+
+/* Formulario */
+
+form {
+background-color: rgba(255, 255, 255, 0.8); /* Blanco con opacidad */
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 50%;
+margin: 40px auto;
+text-align: center;
+}
+
+input[type="email"], input[type="password"] {
+width: 100%;
+height: 40px;
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button[type="submit"] {
+background-color: #2196F3; /* Azul */
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button[type="submit"]:hover {
+background-color: #1A76D2;
+}
+
+p {
+text-align: center;
+margin-top: 20px;
+}
+
+a {
+text-decoration: none;
+color: #2196F3;
+}
+
+a:hover {
+color: #1A76D2;
+}
+
+/* Footer */
+
+.pie-pagina {
+background-color: #2196F3; /* Azul */
+color: #fff;
+padding: 20px;
+text-align: center;
+clear: both;
+}
+
+.grupo-1 {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 20px;
+}
+
+.box {
+width: 30%;
+padding: 20px;
+text-align: center;
+}
+
+.red-social {
+padding: 20px;
+text-align: center;
+}
+
+.Grupo-2 {
+padding: 20px;
+text-align: center;
+background-color: #1A76D2; /* Azul oscuro */
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+form {
+width: 90%;
+}
+.grupo-1 {
+flex-direction: column;
+}
+.box {
+width: 100%;
+}
+}

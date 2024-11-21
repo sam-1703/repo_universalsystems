@@ -1,0 +1,164 @@
+/* Estilos Globales */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #000;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #2196F3, #ffff00); 
+}
+
+/* Estilos NavBar */
+
+header {
+    width: 100%;
+    height: 8rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #2196F3,#F7DC6F); 
+    border-bottom: 1px solid rgba(0, 0, 255, 0.1);
+}
+
+header>* {
+    margin: 0 1rem 0 1rem;
+    font-size: 20px;
+}
+
+.logo img {
+   max-width: 5.5rem;
+}
+
+header>nav>ul {
+    padding: 0.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* Estilos Main  */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 13rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #2196F3, #F7DC6F); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.1);
+}
+
+.container h1 {
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: 1;
+    font-style: italic;
+    color: #000;
+}
+
+.container p {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.container-info {
+    margin: 2rem;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #2196F3, #2196F3); 
+}
+
+.container-info p {
+    padding: 1rem;
+    text-align: justify;
+    color: #444;
+}
+
+/* Estilos Servicios  */
+
+.container-cards {
+    width: 100%;
+    display: inherit;
+    justify-content: space-around;
+}
+
+.card {
+    background: linear-gradient(to bottom, #2196F3, #F7DC6F); 
+    border-radius: 1rem;
+    width: 20%;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.1);
+}
+
+.card-top {
+    height: 8rem;
+}
+
+.card-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.card-body h3 {
+    margin: 1rem 0 .5rem;
+    text-align: center;
+    color: #000;
+}
+
+.Grupo-2 {
+padding: 20px;
+text-align: center;
+background-color: #1A76D2; /* Azul oscuro */
+}
+
+/* Estilos Responsivos */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-cards {
+        width: 40rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .card {
+       width: 42%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    header>* {
+        font-size: .8rem;
+    }
+
+    header {
+        height: 5rem;
+    }
+}

@@ -1,0 +1,133 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #2196F3, #F7DC6F); /* Degradado azul y amarillo */
+    background-attachment: fixed;
+  }
+  
+ /* Header */
+
+header {
+  width: 100%;
+  height: 8rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right,#2196F3, #F7DC6F); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header>* {
+  margin: 0 1rem 0 1rem;
+  font-size: 20px;
+}
+
+.logo img {
+ max-width:50%
+}
+
+header>nav>ul {
+  padding: 0.2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.img1 {
+  width: 560px;
+  align-items: center;
+}
+
+.img2 {
+  width: 540px;
+  height: 150px;
+  align-content: center;
+}
+  
+  /* Main */
+  main {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: calc(25% - 40px);
+  }
+  
+  .card-top {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+  }
+  
+  .card-top img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-body h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2196F3; /* Azul */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+  }
+  .Grupo-2 {
+    padding: 20px;
+    text-align: center;
+    background-color: #1A76D2; /* Azul oscuro */
+  }
+  
+  /* Responsive */
+  @media only screen and (max-width: 768px) {
+    .container-cards {
+      flex-direction: column;
+    }
+    .card {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
